@@ -1,30 +1,52 @@
-# 📱 Laboratório de Estudos: React Native
+# 🍅 FocusFlow - Assistente de Produtividade
 
-> **Status:** Em desenvolvimento contínuo 🚀
+O **FocusFlow** é um aplicativo mobile baseado na técnica Pomodoro, desenvolvido para ajudar no gerenciamento de tempo e foco. Além de alternar entre ciclos de trabalho e descanso, o app recompensa o usuário com frases motivacionais consumidas de uma API externa a cada pausa.
 
-Este repositório funciona como o meu portfólio pessoal de aprendizado e um laboratório prático para o desenvolvimento mobile utilizando **React Native**. 
+---
 
-O objetivo principal deste espaço não é abrigar um único projeto comercial ou de produção, mas sim **documentar minha evolução, armazenar anotações em formato de código e consolidar conhecimentos** adquiridos através de cursos e estudos autônomos.
+## ✨ Funcionalidades
 
-## 🎯 O que você encontrará por aqui?
+* **Cronômetro Dinâmico:** Ciclos de foco de 25 minutos e pausas de 5 minutos.
+* **Contador de Ciclos:** Rastreamento automático de ciclos completados, com um limite de segurança de 10 ciclos diários para evitar burnout.
+* **Recompensas via API:** Consumo da *AdviceSlip API* para exibir conselhos aleatórios em inglês toda vez que um ciclo de foco é concluído.
+* **UI Responsiva e Temática:** Mudança automática da cor de fundo (feedback visual) indicando se o usuário está no modo de Foco ou de Pausa.
+* **Controles Totais:** Botões para Iniciar, Pausar e Avançar (`->`) o ciclo atual.
 
-O conteúdo deste repositório é focado em testes práticos e anotações:
+---
 
-1. **Conceitos e Fundamentos (Aulas e Snippets):**
-   * Códigos focados em explicar o funcionamento de recursos básicos do React e React Native.
-   * Exemplos práticos de uso de Hooks essenciais, como o `useState`.
-   * Testes iniciais de criação de componentes e telas.
+## 🛠️ Tecnologias e Conceitos Aplicados
 
-2. **Mini-Projetos e Desafios:**
-   * Aplicações simples criadas para validar os conceitos estudados.
-   * Exercícios de autoria própria ou desenvolvidos durante cursos, com o foco exclusivo em fixar o que acabei de aprender na prática.
+Este projeto foi construído com **React Native** e JavaScript, focando em aprofundar os seguintes conceitos:
 
-## 🛠️ Tecnologias em Estudo
+* **Gerenciamento de Estado:** Uso intensivo do Hook `useState` para controlar o tempo, ciclos e renderização condicional da interface.
+* **Manipulação de Tempo:** Controle assíncrono usando `setInterval` e `clearInterval` para garantir a precisão do cronômetro sem vazamentos de memória.
+* **Consumo de APIs Externas:** Uso de funções assíncronas (`async/await`) e `fetch` para buscar dados na web.
+* **Tratamento de Cache:** Implementação de `Math.random()` nos parâmetros da URL para evitar respostas em cache da API.
+* **UX/UI Conditional Rendering:** Ocultação e exibição de botões e mudança de estilos (operador ternário) baseados no estado atual do app.
 
-Como estou estruturando minha base neste momento, o foco principal está em:
+---
 
-* **React Native** (Estrutura, CLI/Expo e componentes nativos)
-* **JavaScript / React** (Fundamentos e Hooks)
+## 🚀 Como rodar o projeto localmente
 
-*💡 Nota: Esta lista crescerá com o tempo! Conforme eu avançar nos estudos e sentir necessidade, adicionarei novas bibliotecas e ferramentas (como navegação, gerenciamento de estados globais, etc.) aos meus projetos.*
+1. Clone este repositório:
+```bash
+git clone [https://github.com/SeuUsuario/FocusFlow-App.git](https://github.com/SeuUsuario/FocusFlow-App.git)
+```
 
+2. Acesse a pasta do projeto:
+```bash
+cd FocusFlow-App
+```
+
+3. Instale as dependências:
+```bash
+npm install
+```
+
+4. Rode o aplicativo:
+```bash
+npx expo start 
+```
+
+---
+*Projeto desenvolvido como parte dos estudos de aprimoramento em React Native.*

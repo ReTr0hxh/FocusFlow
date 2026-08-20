@@ -30,7 +30,7 @@ Este projeto foi construído com **React Native** e JavaScript, focando em aprof
 
 1. Clone este repositório:
 ```bash
-git clone [https://github.com/SeuUsuario/FocusFlow-App.git](https://github.com/SeuUsuario/FocusFlow-App.git)
+git clone https://github.com/ReTr0hxh/FocusFlow.git
 ```
 
 2. Acesse a pasta do projeto:
